@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+
+<body>
+
+    <h1>Application Form</h1>
+
+    <p>Fields marked with <b>*</b> are required.</p>
+
+    <form>
+
+        <fieldset>
+            <legend>A. General Information</legend>
+
+            <table width="100%" cellpadding="8">
+                <tr>
+                    <td>
+                        <label>Proposed Insured's Full Name *</label><br>
+                        <input type="text" name="full_name" required>
+                    </td>
+
+                    <td>
+                        <label>Birth Date *</label><br>
+                        <input type="date" name="birth_date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Gender:</label><br>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Address *</label><br>
+                        <textarea name="address" rows="4" cols="60" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Phone Number *</label><br>
+                        <input type="tel" name="phone" placeholder="+92 300 1234567" required>
+                    </td>
+
+                    <td>
+                        <label>Email Address *</label><br>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>ID / CNIC Number *</label><br>
+                        <input type="text" name="cnic" placeholder="42101-1234567-1" required>
+                    </td>
+
+                    <td>
+                        <label>Social Security / Reference Number</label><br>
+                        <input type="text" name="reference_number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Marital Status *</label><br>
+                        <select name="marital_status" required>
+                            <option value="">Select status</option>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Divorced</option>
+                            <option>Widowed</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label>Occupation *</label><br>
+                        <input type="text" name="occupation" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Are you retired? *</label><br>
+                        <input type="radio" name="retired" value="yes" required> Yes
+                        <input type="radio" name="retired" value="no"> No
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>B. Type of Health Coverage</legend>
+
+            <fieldset>
+                <legend>Employee Coverage</legend>
+
+                <input type="radio" name="employee_coverage" value="yes"> Yes
+                <input type="radio" name="employee_coverage" value="no"> No
+
+                <br><br>
+
+                <label>Employee Plan Choice</label><br>
+                <select name="employee_plan">
+                    <option value="">Select plan</option>
+                    <option>Basic Plan</option>
+                    <option>Standard Plan</option>
+                    <option>Premium Plan</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Spouse Coverage</legend>
+
+                <input type="radio" name="spouse_coverage" value="yes"> Yes
+                <input type="radio" name="spouse_coverage" value="no"> No
+
+                <br><br>
+
+                <label>Spouse Plan Choice</label><br>
+                <select name="spouse_plan">
+                    <option value="">Select plan</option>
+                    <option>Basic Plan</option>
+                    <option>Standard Plan</option>
+                    <option>Premium Plan</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Children Coverage</legend>
+
+                <input type="radio" name="children_coverage" value="yes"> Yes
+                <input type="radio" name="children_coverage" value="no"> No
+
+                <br><br>
+
+                <label>Children Plan Choice</label><br>
+                <select name="children_plan">
+                    <option value="">Select plan</option>
+                    <option>Basic Plan</option>
+                    <option>Standard Plan</option>
+                    <option>Premium Plan</option>
+                </select>
+            </fieldset>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>C. Spouse / Children Information</legend>
+
+            <table width="100%" cellpadding="8">
+                <tr>
+                    <td>
+                        <label>Dependent Name</label><br>
+                        <input type="text" name="dependent_name">
+                    </td>
+
+                    <td>
+                        <label>ID / SSN</label><br>
+                        <input type="text" name="dependent_id">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Relationship</label><br>
+                        <select name="relationship">
+                            <option value="">Select relationship</option>
+                            <option>Spouse</option>
+                            <option>Son</option>
+                            <option>Daughter</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label>Birth Date</label><br>
+                        <input type="date" name="dependent_birth_date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Age</label><br>
+                        <input type="number" name="age">
+                    </td>
+
+                    <td>
+                        <label>Gender</label><br>
+                        <select name="dependent_gender">
+                            <option value="">Select gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>D. Policy Information</legend>
+
+            <table width="100%" cellpadding="8">
+                <tr>
+                    <td>
+                        <label>Units</label><br>
+                        <input type="number" name="units">
+                    </td>
+
+                    <td>
+                        <label>Annual Premium</label><br>
+                        <input type="number" name="annual_premium">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <label>Payment Mode *</label><br>
+                        <select name="payment_mode" required>
+                            <option value="">Select payment mode</option>
+                            <option>Monthly</option>
+                            <option>Quarterly</option>
+                            <option>Half Yearly</option>
+                            <option>Yearly</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Cash With Application</label><br>
+                        <input type="number" name="cash_application">
+                    </td>
+
+                    <td>
+                        <label>Planned Monthly Premium</label><br>
+                        <input type="number" name="monthly_premium">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>E. Required Document</legend>
+
+            <p>Please attach your supporting document before submitting the application.</p>
+
+            <label>Attach Document *</label><br>
+            <input 
+                type="file" 
+                name="document"
+                accept=".pdf,.jpg,.jpeg,.png"
+                required
+            >
+
+            <p>Accepted formats: PDF, JPG, JPEG and PNG</p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>F. Declaration</legend>
+
+            <input type="checkbox" name="declaration" required>
+            <label>
+                I confirm that the information provided in this application is complete and accurate.
+            </label>
+
+            <br><br>
+
+            <table width="100%" cellpadding="8">
+                <tr>
+                    <td>
+                        <label>Applicant Full Name / Signature *</label><br>
+                        <input type="text" name="applicant_name" required>
+                    </td>
+
+                    <td>
+                        <label>Application Date *</label><br>
+                        <input type="date" name="application_date" required>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit Application">
+
+    </form>
+
+</body>
+</html>
